@@ -1,0 +1,48 @@
+<div class="backgorund">
+    <div class="head">
+        <h1>Pokemon List</h1>
+    </div>
+    <div class="body">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Weight</th>
+                    <th>Element No.1</th>
+                    <th>Elemnet No.2</th>
+                    <th>Moveset</th>
+                </tr>
+                <tr *ngFor="let item of Data_pokemon">
+                    <td><img src="{{item.img_front}}" alt=""></td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.weight}}</td>
+                    <td>{{item.type_1}}</td>
+                    <td>{{item.type_2}}</td>
+                    <td>{{item.moveset}}</td>
+                </tr>
+            </table>
+        </div>
+
+    <h1>Pokemon Image</h1>
+
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Img Front</th>
+                    <th>Img Back</th>
+                    <th>Img Front Shiny</th>
+                    <th>Img Back Shiny</th>
+                </tr>
+                <tr *ngFor="let item of DataImg_pokemon; let i = index">
+                    <td>{{item.name}}</td>
+                    <td><img src="{{item.img_front}}" alt=""></td>
+                    <td><img src="{{item.img_back}}" alt=""></td>
+                    <td><img src="{{item.front_shiny}}" alt=""></td>
+                    <td><img src="{{item.back_shiny}}" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
