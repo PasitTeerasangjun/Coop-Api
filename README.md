@@ -8,7 +8,7 @@ cd filepath
 ```
 clone repository
 ```
-git clone https://github.com/PasitTeerasangjun/Coop-Api
+git clone https://github.com/PasitTeerasangjun/Coop-Api.git
 ```
 เปลี่ยน directory ไปที่ Coop-Api
 ```
